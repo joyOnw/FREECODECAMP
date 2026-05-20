@@ -1,0 +1,105 @@
+body {
+  background-color: limegreen;
+  font-family: Tahoma;
+  
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  background-color: aqua;
+  border: 3px dashed aquamarine;
+  border-radius: 20px;
+  color: rgb(14, 87, 33);
+  margin-top: -0.5px;
+}
+
+.feature-card-container {
+  background-color: rgb(232, 22, 232); 
+  padding: 10px;
+  padding-top: 25px;
+  border-radius: 5px;
+  box-shadow: 0.8px 0.5px 3px 3px lightgrey;
+  width: 400px;
+  height: 470px;
+  color: rgb(240, 238, 240);
+  margin: 10px auto 20px auto;
+  font-size: large;
+}
+
+.feature-card-container:hover {
+  background-color: green;
+}
+
+.feature-card {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 30px 17px;
+
+}
+
+.feature-card:hover {
+  border: 2px solid green;
+}
+
+.fall:hover {
+  background-color: orange;
+  color: rgb(53, 50, 50);
+}
+
+.spring:hover {
+  background-color: chartreuse; 
+  color: rgb(53, 52, 52);
+}
+
+.winter:hover {
+  background-color: rgb(83, 193, 230); 
+  color: rgb(61, 59, 59);
+}
+
+.summer:hover {
+  background-color: rgb(239, 239, 11); 
+  color: rgb(82, 78, 78);
+}
+
+.feature-card-container:hover, .feature-card:hover, 
+.fall:hover, .spring:hover, .winter:hover, .summer:hover,
+input[type='checkbox']:checked::after {
+    transition: all 0.5s;
+}
+
+label {
+  display: flex;
+  margin: 14px;
+  justify-content: space-evenly;
+}
+
+input[type='checkbox']{
+  appearance: none;
+  width: 20px;
+  height: 25px;
+  border: 10px solid brown;
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='checkbox']:checked {
+  background-color: #f2f4f7;
+  border-color: purple;
+}
+
+input[type='checkbox']:checked::after {
+  content: '✓';
+  color: whitesmoke;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
